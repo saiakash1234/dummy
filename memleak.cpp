@@ -11,7 +11,7 @@ void createArray() {
 
     // Print the array
     for (int i = 0; i < 100; ++i) {
-        std::cout << array[i] << " ";
+        std::cout << array[i] << "    ";
     }
     std::cout << std::endl;
 
@@ -22,7 +22,7 @@ void createArray() {
 }
 
 int main() {
-    createArray();
+    createArray();  
 
     std::cout << "Array created, initialized, printed, but not freed." << std::endl;
 
