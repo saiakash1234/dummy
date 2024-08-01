@@ -16,7 +16,7 @@ void createArray() {
     std::cout << std::endl;
 
     // Normally, you would free the allocated memory with:
-    // delete[] array;
+    free(array);
 
     // Since we are demonstrating a memory leak, we will omit the delete[] statement.
 }
