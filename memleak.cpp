@@ -3,6 +3,7 @@
 void createArray() {
     // Dynamically allocate an array of 100 integers
     int* array = new int[100];
+    
 
     // Initialize the array
     for (int i = 0; i < 100; ++i) {
@@ -15,9 +16,7 @@ void createArray() {
     }
     std::cout << std::endl;
 
-    // Normally, you would free the allocated memory with:
-    // delete[] array;
-
+    free(array);
     // Since we are demonstrating a memory leak, we will omit the delete[] statement.
 }
 
