@@ -20,10 +20,16 @@ void createArray() {
 
     // Since we are demonstrating a memory leak, we will omit the delete[] statement.
 }
+struct node {
+int data;
+node* link;
 
+};
 int main() {
     createArray();
-
+    node * temp  = new node;
+    temp->data = 5;
+     temp->link = nullptr;
     std::cout << "Array created, initialized, printed, but not freed." << std::endl;
 
     // The program ends without freeing the allocated memory.
